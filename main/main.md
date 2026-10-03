@@ -6,13 +6,13 @@ tags:
 # MockLLM
 ## invoke(self, prompt: str)
 Mock LLM để test logic mà không tốn API call (trả về JSON).
-# get_mock_component_scores()
+# get\_mock\_component\_scores()
 Bảng điểm Hard-code $V_k(c)$ cho 14 linh kiện để tiết kiệm 56 lần gọi API lúc test.
-# generate_architectures(catalog)
+# generate\_architectures(catalog)
 Vét cạn tạo ra tất cả tổ hợp kiến trúc từ catalog.
-# calculate_architecture_vk(arch: dict, component_scores: dict)
+# calculate\_architecture\_vk(arch: dict, component\_scores: dict)
 Tính $V_k(s)$ cho bản thiết kế $s$ bằng trung bình cộng $V_k(c)$ của 4 linh kiện.
-# run_pipeline(prd_path: str, agent_ratios: dict, use_mock: bool = True)
+# run_pipeline(prd\_path: str, agent\_ratios: dict, use\_mock: bool = True)
 - Phân tích PRD (Task 2.1) bằng [[prd_analyzer]].
 - Phân bổ trọng số (Task 2.2) bằng [[weight_assigner]].
 - Chấm điểm Linh kiện (Task 3.1)
